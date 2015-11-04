@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>lightbox插件</title>
+    <link rel="stylesheet" type="text/css" href="../css/lightbox.css">
+</head>
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../js/lightbox.js"></script>
+<body>
+<h1>第一组图片</h1>
+<div>
+  <img class="js-lightbox" data-role="lightbox" data-group="group-1" data-source="../image/baobei_1.jpg" data-id="idadfdff" data-caption="这里是标题1" width="100" height="100" src="../image/baobei_1.jpg">
+  <img class="js-lightbox" data-role="lightbox" data-group="group-1" data-source="../image/baobei_2.jpg" data-id="idadfwdff" data-caption="这里是标题2" width="100" height="100" src="../image/baobei_2.jpg">
+  <img class="js-lightbox" data-role="lightbox" data-group="group-1" data-source="../image/baobei_3.jpg" data-id="idadfdggff" data-caption="这里是标题3" width="100" height="100" src="../image/baobei_3.jpg">
+  <img class="js-lightbox" data-role="lightbox" data-group="group-1" data-source="../image/baobei_4.jpg" data-id="idadfdfffff" data-caption="这里是标题4" width="100" height="100" src="../image/baobei_4.jpg">
+
+</div>
+<h1>第二组图片</h1>
+<div>
+    <img class="js-lightbox" data-role="lightbox" data-group="group-2" data-source="../image/baobei_2.jpg" data-id="idad11ffff" data-caption="这里是标题2" width="100" height="100" src="../image/baobei_2.jpg">
+    <img class="js-lightbox" data-role="lightbox" data-group="group-2" data-source="../image/baobei_4.jpg" data-id="idadfdggfff" data-caption="这里是标题4" width="100" height="100" src="../image/baobei_4.jpg">
+</div>
+</body>
+<script>
+    $(function(){
+        var lightbox=new LightBox({
+            speed:500,
+            scale:0.95
+        });
+    });
+</script>
+</html>

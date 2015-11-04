@@ -1,0 +1,246 @@
+/*背景图*/
+
+.c_background {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+.c_background_top{
+    width: 100%;
+    height: 71.6%;
+    background-image: url("../image/qixi/background/c_background_top.png");
+    background-size: 100% 100%;
+}
+
+
+.c_background_middle{
+    width: 100%;
+    height: 13.1%;
+    background-image: url("../image/qixi/background/c_background_middle.png");
+    background-size: 100% 100%;
+}
+
+.c_background_botton{
+    width: 100%;
+    height: 15.3%;
+    background-image: url("../image/qixi/background/c_background_botton.png");
+    background-size: 100% 100%;
+}
+
+/*小女孩*/
+
+.girl {
+    background: url("../image/qixi/girl.png") -755px -0px no-repeat;
+    position: absolute;
+    right: 40%;
+    top: 37%;
+    width: 151px;
+    height: 291px;
+}
+
+/*桥*/
+
+.bridge-bottom {
+    position: absolute;
+    width: 41%;
+    height: 24%;
+    left: 29.5%;
+    top: 76%;
+    overflow: hidden;
+    /*    -webkit-transform:perspective(8px) rotateX(.8deg); */
+}
+/*波浪水布局*/
+
+.water {
+    width: 100%;
+    height: 100%;
+}
+
+.water_1,
+.water_2,
+.water_3,
+.water_4 {
+    width: 100%;
+    position: absolute;
+    height: 50%;
+    -webkit-animation-name: water-flash;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+
+    -moz-animation-name: water-flash;
+    -moz-animation-duration: 10s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-direction: alternate;
+
+    -ms-animation-name: water-flash;
+    -ms-animation-duration: 10s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -ms-animation-direction: alternate;
+}
+
+.water_1 {
+    width: 131px;
+    height: 15px;
+    top: 13%;
+    left: 35%;
+    background: url("../image/qixi/water.png") -261px -0px no-repeat;
+}
+
+.water_2 {
+    width: 161px;
+    height: 9px;
+    top: 30%;
+    left: 45%;
+    background: url("../image/qixi/water.png") -693px -0px no-repeat;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+
+}
+
+.water_3 {
+    width: 261px;
+    height: 29px;
+    top: 50%;
+    left: 15%;
+    background: url("../image/qixi/water.png") -0px -0px no-repeat;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+}
+
+.water_4 {
+    width: 301px;
+    height: 12px;
+    top: 75%;
+    left: 30%;
+    background: url("../image/qixi/water.png") -392px -0px no-repeat;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+}
+
+
+/*水波动画*/
+@-webkit-keyframes water-flash {
+    0%,100%{
+        -webkit-transform: translate3d(0,0,0);
+    }
+    10%,30%,50%,70%,90%{
+        -webkit-transform: translate3d(-30px,0,0);
+    }
+}
+@-moz-keyframes water-flash {
+    0%,100%{
+        -webkit-transform: translate3d(0,0,0);
+    }
+    10%,30%,50%,70%,90%{
+        -webkit-transform: translate3d(-30px,0,0);
+    }
+}
+@-ms-keyframes water-flash {
+    0%,100%{
+        -webkit-transform: translate3d(0,0,0);
+    }
+    10%,30%,50%,70%,90%{
+        -webkit-transform: translate3d(-30px,0,0);
+    }
+}
+
+
+
+/*星星*/
+
+.stars {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.stars > li {
+    position: absolute;
+    width: 30px;
+    height: 31px;
+    background: url("../image/qixi/stars.png") no-repeat;
+    -webkit-animation-name: star-flash;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+
+    -moz-animation-name: star-flash;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-direction: alternate;
+
+    -ms-animation-name: star-flash;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: ease-in-out;
+    -ms-animation-direction: alternate;
+}
+
+.stars1 {
+    top: 20%;
+    left: 30%;
+}
+
+.stars2 {
+    top: 15%;
+    left: 20%;
+}
+
+.stars3 {
+    top: 25%;
+    left: 85%;
+}
+
+.stars4 {
+    top: 30%;
+    left: 70%;
+}
+
+.stars5 {
+    top: 25%;
+    left: 20%;
+}
+
+.stars6 {
+    top: 10%;
+    left: 65%;
+}
+
+/*星星动画效果*/
+@-webkit-keyframes star-flash {
+    0%,50%,100%{
+        opacity: 1;
+    }
+    25%,75%{
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes star-flash {
+    0%,50%,100%{
+        opacity: 1;
+    }
+    25%,75%{
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes star-flash {
+    0%,50%,100%{
+        opacity: 1;
+    }
+    25%,75%{
+        opacity: 0;
+    }
+}

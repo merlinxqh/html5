@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    /* top: 20%;
+    left: 20%; */
+    overflow: hidden;
+    position: absolute;
+}
+
+.content-wrap {
+    position: relative;
+}
+
+.content-wrap > li {
+    background: #CAE1FF;
+    color: red;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+/*li:nth-child(2) {*/
+    /*background: #9BCD9B;*/
+/*}*/
+
+/*li:nth-child(3) {*/
+    /*background: aquamarine;*/
+/*}*/
+
+button {
+    width: 100px;
+    height: 50px;
+}
+
+.button {
+    position: absolute;
+    bottom: 0;
+}
+
+.charector {
+    position: absolute;
+    left: 0%;
+    top: 55%;
+    width: 151px;
+    height: 291px;
+    background: url("../image/qixi/boy.png") -0px -291px no-repeat;
+}
+
+/*暂停css3动画*/
+.pauseWalk {
+    animation-play-state: paused;
+}
+
+.boyOriginal {
+    background-position: -150px -0px;
+}
+
+
+/*css3动画*/
+.slowWalk {
+    /* 填入动画样式规则 */
+    /*规定 @keyframes 动画的名称。*/
+    -webkit-animation-name: person-slow;
+    /*规定动画完成一个周期所花费的秒或毫秒。默认是 0*/
+    -webkit-animation-duration: 950ms;
+    /*规定动画被播放的次数。默认是 1。 infinite(循环播放)*/
+    -webkit-animation-iteration-count: infinite;
+    /*动画切换的方式是一帧一帧的改变*/
+    -webkit-animation-timing-function: steps(1, start);
+
+    -moz-animation-name: person-slow;
+    -moz-animation-duration: 950ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: steps(1, start);
+
+    -ms-animation-name: person-slow;
+    -ms-animation-duration: 950ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: steps(1, start);
+
+}
+
+/*//带花动画*/
+.slowFlowerWalk{
+    -webkit-animation-name: person-flower-slow;
+    -webkit-animation-duration: 950ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps(1, start);
+
+    -moz-animation-name: person-flower-slow;
+    -moz-animation-duration: 950ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: steps(1, start);
+
+    -ms-animation-name: person-flower-slow;
+    -ms-animation-duration: 950ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: steps(1, start);
+}
+
+/* 普通慢走 */
+/*chrome safari*/
+@-webkit-keyframes person-slow {
+    0% {
+        background-position: -0px -291px;
+    }
+    25% {
+        background-position: -602px -0px;
+    }
+    50% {
+        background-position: -302px -291px;
+    }
+    75% {
+        background-position: -151px -291px;
+    }
+    100% {
+        background-position: -0px -291px;
+    }
+}
+
+/*firefox*/
+@-moz-keyframes person-slow {
+    0% {
+        background-position: -0px -291px;
+    }
+    25% {
+        background-position: -602px -0px;
+    }
+    50% {
+        background-position: -302px -291px;
+    }
+    75% {
+        background-position: -151px -291px;
+    }
+    100% {
+        background-position: -0px -291px;
+    }
+}
+
+/*ie*/
+@-ms-keyframes person-slow {
+    0% {
+        background-position: -0px -291px;
+    }
+    25% {
+        background-position: -602px -0px;
+    }
+    50% {
+        background-position: -302px -291px;
+    }
+    75% {
+        background-position: -151px -291px;
+    }
+    100% {
+        background-position: -0px -291px;
+    }
+}
+
+
+
+/*小男孩带花动画*/
+
+@-webkit-keyframes person-flower-slow {
+    0% {
+        background-position: -453px -0px;
+    }
+    25% {
+        background-position: -904px -0px;
+    }
+    50% {
+        background-position: -451px -0px;
+    }
+    75% {
+        background-position: -753px -0px;
+    }
+    100% {
+        background-position: -300px -0px;
+    }
+}
+
+@-moz-keyframes person-flower-slow {
+    0% {
+        background-position: -453px -0px;
+    }
+    25% {
+        background-position: -904px -0px;
+    }
+    50% {
+        background-position: -451px -0px;
+    }
+    75% {
+        background-position: -753px -0px;
+    }
+    100% {
+        background-position: -300px -0px;
+    }
+}
+
+@-ms-keyframes person-flower-slow {
+    0% {
+        background-position: -453px -0px;
+    }
+    25% {
+        background-position: -904px -0px;
+    }
+    50% {
+        background-position: -451px -0px;
+    }
+    75% {
+        background-position: -753px -0px;
+    }
+    100% {
+        background-position: -300px -0px;
+    }
+}
+
+
+
